@@ -1,0 +1,74 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "MyMtn Shop API.",
+        "title": "MyMtn Shop API",
+        "contact": {},
+        "license": {},
+        "version": "1.0"
+    },
+    "host": "localhost:8085",
+    "basePath": "/api/v1/",
+    "paths": {
+        "/health": {
+            "get": {
+                "description": "This endpoint exists solely for checking the active status of the application\nAny Http status other than 200 signifies that the application is down",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Healthcheck endpoint for Shop API",
+                "responses": {
+                    "200": {}
+                }
+            }
+        },
+        "/testdata/{number}": {
+            "get": {
+                "description": "This endpoint exists testing sample request calls to backing service",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Test Request endpoint to get data from some backend service",
+                "responses": {
+                    "200": {}
+                }
+            }
+        },
+        "/product-types/": {
+            "get": {
+                "description": "This endpoint returns all available Product Types that can purchased",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "This endpoint returns all available Product Types that can purchased",
+                "responses": {
+                    "200": {}
+                }
+            }
+        },
+        "/products/": {
+            "get": {
+                "description": "This endpoint returns all available Product that can purchased",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "This endpoint returns all available Product that can purchased",
+                "responses": {
+                    "200": {}
+                }
+            }
+        }
+    }
+}

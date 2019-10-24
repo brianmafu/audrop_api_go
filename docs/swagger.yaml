@@ -1,0 +1,32 @@
+basePath: /api/v1/
+host: localhost:8085
+info:
+  contact: {}
+  description: MyMtn Shop API.
+  license: {}
+  title: MyMtn Shop API
+  version: "1.0"
+paths:
+  /health:
+    get:
+      consumes:
+      - application/json
+      description: |-
+        This endpoint exists solely for checking the active status of the application
+        Any Http status other than 200 signifies that the application is down
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: Healthcheck endpoint for Shop API
+  /testdata/{number}:
+    get:
+      consumes:
+      - application/json
+      description: This endpoint exists testing sample request calls to backing service
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: Test Request endpoint to get data from some backend service
+swagger: "2.0"

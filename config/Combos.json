@@ -1,0 +1,98 @@
+[
+  {
+    "combo_id": 1,
+    "combo_cost": "R55.00",
+    "combo_validity": "1 Week",
+    "combo_category_id": 1,
+    "combo_bundles": [
+      {
+        "bundle_id": 8,
+        "bundle_validity": null,
+        "bundle_cost": 0.0,
+        "bundle_value": "R30",
+        "bundle_category_id": null,
+        "product_id": 3
+      },
+      {
+        "bundle_id": 4,
+        "bundle_validity": null,
+        "bundle_cost": 0.0,
+        "bundle_value": "70 Minutes",
+        "bundle_category_id": null,
+        "product_id": 2
+      },
+      {
+        "bundle_id": 3,
+        "bundle_validity": null,
+        "bundle_category_id": null,
+        "bundle_cost": 0.0,
+        "bundle_value": "300 MB",
+        "product_id": 1
+      }
+    ]
+  },
+  {
+    "combo_id": 2,
+    "combo_cost": "R70.00",
+    "combo_validity": "2 Week",
+    "combo_category_id": 1,
+    "combo_bundles": [
+      {
+        "bundle_id": 8,
+        "bundle_validity": null,
+        "bundle_cost": 0.0,
+        "bundle_value": "R40",
+        "bundle_category_id": null,
+        "product_id": 3
+      },
+      {
+        "bundle_id": 4,
+        "bundle_validity": null,
+        "bundle_cost": 0.0,
+        "bundle_value": "50 Minutes",
+        "bundle_category_id": null,
+        "product_id": 2
+      },
+      {
+        "bundle_id": 3,
+        "bundle_validity": null,
+        "bundle_category_id": null,
+        "bundle_cost": 0.0,
+        "bundle_value": "500 MB",
+        "product_id":1
+      }
+    ]
+  },
+  {
+    "combo_id": 3,
+    "combo_cost": "R555.00",
+    "combo_validity": "1 Month",
+    "combo_category_id": 2,
+    "combo_bundles": [
+      {
+        "bundle_id": 8,
+        "bundle_validity": null,
+        "bundle_cost": 0.0,
+        "bundle_value": "R200",
+        "bundle_category_id": null,
+        "product_id": 3
+      },
+      {
+        "bundle_id": 4,
+        "bundle_validity": null,
+        "bundle_cost": 0.0,
+        "bundle_value": "100 SMS",
+        "bundle_category_id": null,
+        "product_id": 4
+      },
+      {
+        "bundle_id": 3,
+        "bundle_validity": null,
+        "bundle_category_id": null,
+        "bundle_cost": 0.0,
+        "bundle_value": "30 MB",
+        "product_id": 1
+      }
+    ]
+  }
+]

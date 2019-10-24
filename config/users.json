@@ -1,0 +1,14 @@
+[
+  {
+    "msisdn": "0981239875",
+    "name": "Joe",
+    "surname": "Doe",
+    "email": "joe.doe@email.com"
+  },
+  {
+    "msisdn": "0981239875",
+    "name": "Brain",
+    "surname": "Stark",
+    "email": "brain.stark@email.com"
+  }
+]

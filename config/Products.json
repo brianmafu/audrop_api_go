@@ -1,0 +1,26 @@
+[
+  {
+    "product_name": "Data",
+    "product_id": 1,
+    "product_description": "MTN DATA Bundles",
+    "product_icon": "launch"
+  },
+  {
+    "product_name": "Voice",
+    "product_id": 2,
+    "product_description": "MTN Voice Bundles",
+    "product_icon": "room"
+  },
+  {
+    "product_name": "Airtime",
+    "product_id": 3,
+    "product_description": "MTN Airtime Bundles",
+    "product_icon": "store"
+  },
+  {
+    "product_name": "SMS",
+    "product_id": 4,
+    "product_description": "MTN SMS Bundles",
+    "product_icon": "wifi"
+  }
+]

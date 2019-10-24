@@ -1,0 +1,95 @@
+[
+  {
+    "bundle_id": 1,
+    "bundle_validity": "60 Days",
+    "bundle_cost": 299.0,
+    "bundle_value": "5 GB",
+    "product_id": 1,
+    "product_category_id": 1
+  },
+  {
+    "bundle_id": 2,
+    "bundle_validity": "24 hours",
+    "bundle_cost": 10.0,
+    "bundle_value": "75 MB",
+    "product_id": 1,
+    "product_category_id": 3
+  },
+  {
+    "bundle_id": 9,
+    "bundle_validity": "24 hours",
+    "bundle_cost": 40.0,
+    "bundle_value": "1 GB",
+    "product_id": 1,
+    "product_category_id": 3
+  },
+  {
+    "bundle_id": 12,
+    "bundle_validity": "30 Days",
+    "bundle_cost": 100.0,
+    "bundle_value": "3 GB",
+    "product_id": 1,
+    "product_category_id": 5
+  },
+  {
+    "bundle_id": 13,
+    "bundle_validity": "30 Days",
+    "bundle_cost": 199.0,
+    "bundle_value": "5 GB",
+    "product_id": 1,
+    "product_category_id": 7
+  },
+  {
+    "bundle_id": 14,
+    "bundle_validity": "60 Days",
+    "bundle_cost": 90.0,
+    "bundle_value": "5 GB",
+    "product_id": 1,
+    "product_category_id": 8
+  },
+  {
+    "bundle_id": 4,
+    "bundle_validity": "1 Week",
+    "bundle_cost": 17.0,
+    "bundle_value": "70 Minutes",
+    "product_id": 3
+  },
+  {
+    "bundle_id": 5,
+    "bundle_validity": "2 Weeks",
+    "bundle_cost": 30.0,
+    "bundle_value": "100 Minutes",
+    "BundleCategory": 0,
+    "product_id": 3
+  },
+  {
+    "bundle_id": 7,
+    "bundle_validity": "Unlimited",
+    "bundle_cost": 100,
+    "bundle_value": "R100",
+    "product_id": 3,
+    "product_category_id": 2
+  },
+  {
+    "bundle_id": 8,
+    "bundle_validity": "Unlimited",
+    "bundle_cost": 60.0,
+    "bundle_value": "R60",
+    "product_category_id": 2,
+    "product_id": 2
+  },
+  {
+    "bundle_id": 9,
+    "bundle_validity": "30 Days",
+    "bundle_cost": 33.0,
+    "bundle_value": "110 SMS",
+    "product_id": 4
+  },
+  {
+    "bundle_id": 10,
+    "bundle_validity": "30 Days",
+    "bundle_cost": 15.0  ,
+    "bundle_value": "230 SMS",
+    "product_id": 4
+  }
+]

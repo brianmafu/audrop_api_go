@@ -1,0 +1,43 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: mymtnshop-api
+spec:
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: mymtnshop-api
+    spec:
+      containers:
+        - name: mymtnshop-api
+          image: mymtnregistry.azurecr.io/mymtnshop:image_version
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 250m
+            limits:
+              cpu: 500m
+          env:
+            - name: API_PORT
+              value: "80"
+          envFrom:
+            - configMapRef:
+                name: shop-service-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mymtnshop-api
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+  selector:
+    app: mymtnshop-api

@@ -1,0 +1,68 @@
+[
+  {
+    "product_category_name": "Volume Bundles",
+    "product_category_id": 1,
+    "product_category_description": "Unlimited All Network Access Data Bundle",
+    "product_id": 1
+  },
+  {
+    "product_category_name": "Ayoba Airtime",
+    "product_category_id": 2,
+    "product_category_description": "Unlimited Airtime to call All networks",
+    "product_id": 2
+  },
+  {
+    "product_category_name": "Time Bundles",
+    "product_category_id": 3,
+    "product_category_description": "Unlimited Facebook/Twitter Access between 00:00 am - 23:00 am",
+    "product_id": 1
+  },
+  {
+    "product_category_name": "Social Bundles",
+    "product_category_id": 4,
+    "product_category_description": "Unlimited Facebook,Twitter,Instagram and Youtube  Access",
+    "product_id": 1
+  },
+  {
+    "product_category_name": "Discounted Bundles",
+    "product_category_id": 5,
+    "product_category_description": "R10 for 100 MB Data Valid for 1 Week",
+    "product_id": 1
+  },
+  {
+    "product_category_name": "Roaming Bundles",
+    "product_category_id": 6,
+    "product_category_description": "R100 for 100 MB Roaming Bundles",
+    "product_id": 1
+  },
+  {
+    "product_category_name": "Music Streaming Bundles",
+    "product_category_id": 7,
+    "product_category_description": "R100 for 100 MB Music Streaming",
+    "product_id": 1
+  },
+  {
+    "product_category_name": "Postpaid Bundles",
+    "product_category_id": 8,
+    "product_category_description": "R100 for 100 MB Anytime Postpaid Data",
+    "product_id": 1
+  },
+  {
+    "product_category_name": "Botsotso Airtime Bundle",
+    "product_category_id": 9,
+    "product_category_description": "Botsotso Airtime to call Call networks",
+    "product_id": 2
+  },
+  {
+    "product_category_name": "Ayoba SMS Bundle",
+    "product_category_id": 10,
+    "product_category_description": "Free Ayoba SMS to vote for your IDOL Star",
+    "product_id": 4
+  },
+  {
+    "product_category_name": "Mid Night Train Voice Bundle",
+    "product_category_id": 11,
+    "product_category_description": "Unlimited Voice Bundles to call MTN to MTN",
+    "product_id": 3
+  }
+]

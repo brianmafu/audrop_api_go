@@ -1,0 +1,14 @@
+[
+  {
+    "combo_category_name": "Saver Combo",
+    "combo_category_id":1
+  },
+  {
+    "combo_category_name": "Tourist Pack Combo",
+    "combo_category_id":2
+  },
+  {
+    "combo_category_name": "Pulse Combo Combo",
+    "combo_category_id":3
+  }
+]
