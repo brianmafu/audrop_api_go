@@ -9,7 +9,6 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"github.com/gobuffalo/envy"
 )
 
 // @title Audrop Music API
@@ -29,7 +28,7 @@ func main() {
 	corsConfig.AddAllowHeaders("Origin", "Content-Length", "Content-Type", "User-Agent", "Referrer", "Host", "Token")
 	router.Use(cors.New(corsConfig))
 	routes.ConfigureRouter(router)
-	port := envy.Get("API_PORT", "9001")
-	docs.SwaggerInfo.Host = ":" + os.Getenv("PORT")
+	port := os.Getenv("PORT")
+	docs.SwaggerInfo.Host = ":" + port
 	log.Fatal(router.Run(fmt.Sprintf(":%s", port)))
 }
