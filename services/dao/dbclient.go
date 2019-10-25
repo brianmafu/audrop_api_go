@@ -14,7 +14,7 @@ var (
 
 	MongoDBHosts = "cluster0-wwqx1.mongodb.net"
 	DBNAME       = "audrop"
-	DBPASSWORD   = "audrop"
+	DBPASSWORD   = "DN1tVRw5tjc90nTq"
 	DBUSERNAME   = "audrop"
 
 	// We need this object to establish a session to our MongoDB.
