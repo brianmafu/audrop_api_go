@@ -4,6 +4,7 @@ import (
 	"audrop-api/models"
 	"audrop-api/services/dao"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"strconv"
@@ -17,6 +18,8 @@ func CreateArtistCtrl(c *gin.Context) {
 	//  Let gin do the parsing of the body, by using a binding.
 	var artist models.Artist
 	_ = c.BindJSON(&artist)
+	fmt.Println(artist)
+
 	success := dao.CreateArtist(artist) // Inserts the artist to the DB
 	if !success {
 		c.JSON(http.StatusCreated, gin.H{"response": "OK"})

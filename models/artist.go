@@ -10,7 +10,7 @@ type Artist struct {
 	ID         bson.ObjectId `bson:"_id"`
 	ProfileID  int64         `json:"profile_id"`
 	StudioName string        `json:"studio_name"`
-	FirstName  string        `json:"first_names"`
+	FirstNames string        `json:"first_names"`
 	LastName   string        `json:"last_name"`
 	About      string        `json: "about"`
 	Created    time.Time     `json:"created"`

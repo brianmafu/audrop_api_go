@@ -1,17 +1,21 @@
 package dao
 
 import (
-	"gopkg.in/mgo.v2"
-	"os"
 	"time"
+
+	"gopkg.in/mgo.v2"
 )
 
-
 var (
-	MongoDBHosts = os.Getenv("DB_HOST")
-	DBNAME = os.Getenv("DB_NAME")
-	DBPASSWORD = os.Getenv("DB_PASSWORD")
-	DBUSERNAME = ""
+	// MongoDBHosts = os.Getenv("DB_HOST")
+	// DBNAME = os.Getenv("DB_NAME")
+	// DBPASSWORD = os.Getenv("DB_PASSWORD")
+	// DBUSERNAME = ""
+
+	MongoDBHosts = "localhost"
+	DBNAME       = "audrop"
+	DBPASSWORD   = "audrop"
+	DBUSERNAME   = ""
 
 	// We need this object to establish a session to our MongoDB.
 	mongoDBDialInfo = &mgo.DialInfo{

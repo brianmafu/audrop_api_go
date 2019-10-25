@@ -2,6 +2,7 @@ package dao
 
 import (
 	"audrop-api/models"
+	"fmt"
 	"log"
 	"time"
 
@@ -12,12 +13,21 @@ import (
 // DATABASE COLLECTION NAME the name of the document
 
 const (
-	Artists = "artist"
+	Artists = "artists"
 )
 
 func CreateArtist(artist models.Artist) bool {
 	// Calling MongoSession from our dbclient.go
-	MongoSession.SetMode(mgo.Monotonic, true)
+	fmt.Println("on CreateArtist")
+	MongoSession.SetMode(mgo.Monotonic, false)
+
+	// if error != nil {
+	// 	fmt.Println("some mognn conntect bug")
+	// 	fmt.Println(error)
+	// 	fmt.Println("*********")
+	// }
+	fmt.Println(DBNAME)
+	fmt.Println(artist)
 	collection := MongoSession.DB(DBNAME).C(Artists)
 	artist.ID = bson.NewObjectId()
 	artist.Created = time.Now()

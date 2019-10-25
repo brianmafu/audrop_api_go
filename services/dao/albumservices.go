@@ -12,7 +12,7 @@ import (
 // DATABASE COLLECTION NAME the name of the document
 
 const (
-	Albums = "album"
+	Albums = "albums"
 )
 
 func CreateAlbum(album models.Album) bool {
