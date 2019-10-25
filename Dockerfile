@@ -1,26 +1,21 @@
-# ======================================================================================================================
-#       Use an official Golang runtime as a Parent Image
-# ======================================================================================================================
+FROM heroku/heroku:18-build as build
 
-FROM golang:alpine as builder
-
-RUN mkdir /build
-
-ADD . /build/
-
-WORKDIR /build
-
-RUN go build -o main .
-
-FROM alpine
-
-ENV DB_NAME=mymtnshop
-ENV DB_HOST="mongodb_mongodb_1:27017"
-ENV DB_USERNAME=""
-ENV DB_PASSWORD=""
-
-COPY --from=builder /build/main /app/
-
+COPY . /app
 WORKDIR /app
 
-CMD ["./main"]
+# Setup buildpack
+RUN mkdir -p /tmp/buildpack/heroku/go /tmp/build_cache /tmp/env
+RUN curl https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/go.tgz | tar xz -C /tmp/buildpack/heroku/go
+
+#Execute Buildpack
+RUN STACK=heroku-18 /tmp/buildpack/heroku/go/bin/compile /app /tmp/build_cache /tmp/env
+
+# Prepare final, minimal image
+FROM heroku/heroku:18
+
+COPY --from=build /app /app
+ENV HOME /app
+WORKDIR /app
+RUN useradd -m heroku
+USER heroku
+CMD /app/bin/audrop-api

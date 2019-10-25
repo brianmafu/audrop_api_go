@@ -1,12 +1,11 @@
-# MY-MTN SHOP API
+# AUDROP MUSIC API
 
-MY-MTN Shop Application Programming Interface (API) - Is the next generation set of functions and procedures allowing the creation of 
-applications that access the features, data or products.
+Audrop Music API
 
 ## Getting Started
 To get the copy of the project up and running on your local machine for development and testing purposes please run:
 
-    git clone  https://<username>:<password>@github.com/MTN-Group/mymtn-nextgen-shop.git
+    git clone  https://<username>:<password>@https://github.com/brianmafu/audrop_api_go.git
     
 ### Prerequisites
 
@@ -58,8 +57,3 @@ Give an example
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
-
-## Authors
-
-* **Brian Mafu**
-* **Tshakule (Tshaks) Nemalili**
