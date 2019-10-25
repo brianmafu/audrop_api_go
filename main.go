@@ -11,11 +11,11 @@ import (
 	"github.com/gobuffalo/envy"
 )
 
-// @title MyMtn Shop API
+// @title Audrop Music API
 // @version 1.0
-// @description MyMtn Shop API.
+// @description Audrop Music API
 
-// @host localhost:8085
+// @host localhost:9001
 // @BasePath /api/v1/
 
 //Entry point for the Application
