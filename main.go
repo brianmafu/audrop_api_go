@@ -5,6 +5,7 @@ import (
 	"audrop-api/routes"
 	"fmt"
 	"log"
+	"os"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -29,6 +30,6 @@ func main() {
 	router.Use(cors.New(corsConfig))
 	routes.ConfigureRouter(router)
 	port := envy.Get("API_PORT", "9001")
-	docs.SwaggerInfo.Host = ":" + port
+	docs.SwaggerInfo.Host = ":" + os.Getenv("PORT")
 	log.Fatal(router.Run(fmt.Sprintf(":%s", port)))
 }
