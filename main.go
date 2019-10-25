@@ -29,6 +29,6 @@ func main() {
 	router.Use(cors.New(corsConfig))
 	routes.ConfigureRouter(router)
 	port := envy.Get("API_PORT", "9001")
-	docs.SwaggerInfo.Host = envy.Get("API_HOST", "127,0,0,1:"+port)
+	docs.SwaggerInfo.Host = "127,0,0,1:" + port
 	log.Fatal(router.Run(fmt.Sprintf(":%s", port)))
 }
