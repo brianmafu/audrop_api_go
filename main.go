@@ -1,13 +1,14 @@
 package main
 
 import (
+	"audrop-api/docs"
+	"audrop-api/routes"
 	"fmt"
+	"log"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/gobuffalo/envy"
-	"log"
-	"mymtn-shop/docs"
-	"mymtn-shop/routes"
 )
 
 // @title MyMtn Shop API
@@ -27,7 +28,7 @@ func main() {
 	corsConfig.AddAllowHeaders("Origin", "Content-Length", "Content-Type", "User-Agent", "Referrer", "Host", "Token")
 	router.Use(cors.New(corsConfig))
 	routes.ConfigureRouter(router)
-	port := envy.Get("API_PORT", "8085")
+	port := envy.Get("API_PORT", "9001")
 	docs.SwaggerInfo.Host = envy.Get("API_HOST", "localhost:"+port)
 	log.Fatal(router.Run(fmt.Sprintf(":%s", port)))
 }

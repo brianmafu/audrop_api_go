@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"github.com/gin-gonic/gin"
 	"log"
-	"mymtn-shop/models"
-	"mymtn-shop/services/dao"
+	"audrop-api/models"
+	"audrop-api/services/dao"
 	"net/http"
 )
 

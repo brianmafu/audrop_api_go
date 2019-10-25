@@ -1,11 +1,12 @@
 package routes
 
 import (
+	"audrop-api/controllers"
+	_ "audrop-api/docs"
+
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
-	"mymtn-shop/controllers"
-	_ "mymtn-shop/docs"
 )
 
 func ConfigureRouter(router *gin.Engine) {
@@ -14,24 +15,22 @@ func ConfigureRouter(router *gin.Engine) {
 	{
 		apiV1.GET("health", controllers.HealthCheck)
 
-		apiV1.POST("products", controllers.CreateProductCtrl)
-		apiV1.POST("categories", controllers.CreateProductCategoryCtrl)
-		apiV1.POST("bundles", controllers.CreateBundleCtrl)
+		apiV1.POST("albums", controllers.CreateAlbumCtrl)
+		apiV1.POST("songs", controllers.CreateSongCtrl)
+		apiV1.POST("artists", controllers.CreateArtistCtrl)
 
 		apiV1.POST("users", controllers.CreateUserCtrl)
 		apiV1.GET("users", controllers.GetUsersCtrl)
 		apiV1.GET("users/:msisdn", controllers.GetUserCtrl)
 
-		apiV1.GET("products", controllers.GetProductsCtl)
-		apiV1.GET("products/:id", controllers.GetProductCtrl)
-		apiV1.GET("categories", controllers.GetProductsCategoriesCtl)
-		apiV1.GET("categories/:id", controllers.GetProductCategoryCtrl)
-		apiV1.GET("bundles", controllers.GetBundlesCtrl)
-		apiV1.GET("bundles/:id", controllers.GetBundleCtrl)
+		apiV1.GET("artists", controllers.GetArtistsCtrl)
+		apiV1.GET("artists/:id", controllers.GetArtistCtrl)
 
-		apiV1.GET("product-bundles/:prod_id", controllers.GeProductBundlesCtrl)
-		apiV1.GET("product-cat-bundles/:cat_id", controllers.GeProductCategoryBundlesCtrl)
+		apiV1.GET("albums", controllers.GetAlbumsCtrl)
+		apiV1.GET("albums/:id", controllers.GetAlbumCtrl)
 
-		//apiV1.GET("combos/:id", controllers.GetComboCtrl)
+		apiV1.GET("songs", controllers.GetSongsCtrl)
+		apiV1.GET("songs/:id", controllers.GetSongCtrl)
+
 	}
 }

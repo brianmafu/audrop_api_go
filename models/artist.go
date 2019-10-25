@@ -1,6 +1,8 @@
 package models
 
 import (
+	"time"
+
 	"gopkg.in/mgo.v2/bson"
 )
 
@@ -11,45 +13,9 @@ type Artist struct {
 	FirstName  string        `json:"first_names"`
 	LastName   string        `json:"last_name"`
 	About      string        `json: "about"`
+	Created    time.Time     `json:"created"`
+	Modified   time.Time     `json:"modified"`
 }
 
-// Artists is an array of Artists
+// Array of Artists
 type Artists []Artist
-
-// songs: [
-//     {
-//       type: mongoose.Schema.Types.ObjectId,
-//       ref: 'Song',
-//       default: [],
-//     },
-//   ],
-//   albums: [
-//     {
-//       type: mongoose.Schema.Types.ObjectId,
-//       ref: 'Album',
-//       default: [],
-//     },
-//   ],
-//   categories: [
-//     {
-//       type: String,
-//       required: true,
-//     },
-//   ],
-//   name: {
-//     type: String,
-//     required: true,
-//   },
-//   profileImageURL: {
-//     type: String,
-//     required: true,
-//   },
-//   thumbnailProfileImageURL: {
-//     type: String,
-//     required: true,
-//   },
-//   about: {
-//     type: String,
-//     required: true,
-//   },
-// });

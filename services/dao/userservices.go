@@ -4,7 +4,7 @@ import (
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 	"log"
-	"mymtn-shop/models"
+	"audrop-api/models"
 	"time"
 )
 

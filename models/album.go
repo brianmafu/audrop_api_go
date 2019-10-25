@@ -6,9 +6,8 @@ import (
 	"gopkg.in/mgo.v2/bson"
 )
 
-type Song struct {
+type Album struct {
 	ID                bson.ObjectId `bson:"_id"`
-	AlbumID           int64         `json:"album_id"`
 	ArtistID          int64         `json:"artist_id"`
 	Title             string        `json:"title"`
 	Description       string        `json:"description"`
@@ -18,11 +17,9 @@ type Song struct {
 	Duration          string        `json:"duration"`
 	DurationInSeconds int64         `json:"duration_in_seconds"`
 	Stars             int64         `json:"stars"`
-	FileName          string        `json:"file_name"`
 	Created           time.Time     `json:"created"`
 	Modified          time.Time     `json:"modified"`
 }
 
-// Array of Songs
-
-type Songs []Song
+// Array of Albums
+type Albums []Album

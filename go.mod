@@ -1,4 +1,4 @@
-module mymtn-shop
+module audrop-api
 
 go 1.13
 
