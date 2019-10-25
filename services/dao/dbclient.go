@@ -12,10 +12,10 @@ var (
 	// DBPASSWORD = os.Getenv("DB_PASSWORD")
 	// DBUSERNAME = ""
 
-	MongoDBHosts = "localhost"
+	MongoDBHosts = "cluster0-wwqx1.mongodb.net"
 	DBNAME       = "audrop"
 	DBPASSWORD   = "audrop"
-	DBUSERNAME   = ""
+	DBUSERNAME   = "audrop"
 
 	// We need this object to establish a session to our MongoDB.
 	mongoDBDialInfo = &mgo.DialInfo{
